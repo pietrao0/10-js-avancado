@@ -20,7 +20,7 @@ section{
 
 }
 
-select#Flista {
+select#flista {
     width: 50px;
 }
 
