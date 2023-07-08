@@ -1,4 +1,4 @@
-let num = document.querySelector('input[name="fnum]')
+let num = document.querySelector('input[name="fnum"]')
 let lista = document.querySelector('select[name="flista"]')
 let res = document.querySelector('div#res')
 let valores = []
