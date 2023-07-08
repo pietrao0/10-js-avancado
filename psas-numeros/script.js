@@ -1,4 +1,4 @@
-let num = document.querySelector('input#fnum')
+let num = document.querySelector('input[name="fnum]')
 let lista = document.querySelector('selector#flista')
 let res = document.querySelector('div#res')
 let valores = []
@@ -29,7 +29,7 @@ function adicionar() {
         item.text = `Valor ${num.value} adicionado`
         lista.appendChild(item)
     } else {
-        window.alert('Valor inválido ou a encontrado na lista.')
+        window.alert('Valor inválido ou não encontrado na lista.')
     }
     num.value = ''
     num.focus()
