@@ -21,7 +21,7 @@ section{
 }
 
 select#Flista {
-    width: 150px;
+    width: 50px;
 }
 
 footer{
