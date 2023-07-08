@@ -1,5 +1,5 @@
-let num = document.querySelector('input#Fnum')
-let lista = document.querySelector('selector#Flista')
+let num = document.querySelector('input#fnum')
+let lista = document.querySelector('selector#flista')
 let res = document.querySelector('div#res')
 let valores = []
 
@@ -26,7 +26,7 @@ function adicionar() {
     if(isNumero(num.value) && !inLista(num.value, valores)) {
         valores.push(Number(num.value))
         let item = document.createElement('option')
-        item.text = 'Valor ${num.value} adicionado'
+        item.text = `Valor ${num.value} adicionado`
         lista.appendChild(item)
     } else {
         window.alert('Valor inválido ou a encontrado na lista.')
@@ -54,11 +54,11 @@ function finalizar() {
         }
         media = soma / tot
         res.innerHTML = ''
-        res.innerHTML += <p>Ao todo, temos ${tot} números cadastrados.</p>
-        res.innerHTML += <p>O maior valor informado foi ${maior}</p>
-        res.innerHTML += <p>O menor valor informado foi ${menor}</p>
-        res.innerHTML += <p>Somando tods os valores temos ${soma}</p>
-        res.innerHTML += <p>A media de todos os valores digitados é de ${media}</p>
+        res.innerHTML += `<p>Ao todo, temos ${tot} números cadastrados.</p>`
+        res.innerHTML += `<p>O maior valor informado foi ${maior}</p>`
+        res.innerHTML += `<p>O menor valor informado foi ${menor}</p>`
+        res.innerHTML += `<p>Somando tods os valores temos ${soma}</p>`
+        res.innerHTML += `<p>A media de todos os valores digitados é de ${media}</p>`
 
 
     }
